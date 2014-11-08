@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="langdetect.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/poi-3.10.1/poi-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.10.1/poi-ooxml-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.10.1/poi-ooxml-schemas-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="lib/poi-3.10.1/poi-scratchpad-3.10.1-20140818.jar"/>
+	<classpathentry kind="lib" path="/Users/jgcupit/Documents/workspace/LAC/src/jsonic-1.3.6/jsonic-1.3.6.jar" sourcepath="/Users/jgcupit/Documents/workspace/LAC/src/jsonic-1.3.6/jsonic-1.3.6-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/Users/jgcupit/Documents/workspace/LAC/src/jsonic-1.3.6/jsonic-1.3.6-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
