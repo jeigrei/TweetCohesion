@@ -14,7 +14,9 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.BoxLayout;
 
 import java.awt.GridLayout;
+
 import javax.swing.JLabel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.JFileChooser;
@@ -184,16 +186,17 @@ public class TweetUI extends JFrame {
 		contentPane.add(btnInputBrowse);
 		
 		JTextArea txtrConsole = new JTextArea();
-		txtrConsole.setText("Tweet Cohestion Analysis v0.2\n");
-		txtrConsole.setBounds(6, 212, 516, 250);
-		contentPane.add(txtrConsole);
+		JScrollPane sp = new JScrollPane(txtrConsole);
+		txtrConsole.setText("Tweet Cohesion Analysis v0.2\n");
+		sp.setBounds(6, 212, 516, 250);
+		contentPane.add(sp);
 		
 		PrintStream originalOut = System.out;
 		PrintStream interceptor = new Interceptor(originalOut, txtrConsole);
 		
 		fldEnglishTweetsPath = new JTextField();
 		fldEnglishTweetsPath.setColumns(10);
-		fldEnglishTweetsPath.setBounds(124, 118, 262, 28);
+		fldEnglishTweetsPath.setBounds(124, 117, 262, 28);
 		contentPane.add(fldEnglishTweetsPath);
 		
 		JLabel lblSaveEnglishTweets = new JLabel("English tweets:");

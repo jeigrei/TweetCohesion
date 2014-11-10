@@ -116,7 +116,7 @@ public class TweetsComparison {
 			if(tweets.indexOf(endTweet) == (tweets.size() - 1)){
 				break;
 			}
-			System.out.println("Calc'ing tweets: " + startTweet.getTimeStr() + " to " + endTweet.getTimeStr());
+			System.out.println("Analyzing tweets: " + startTweet.getTimeStr() + " to " + endTweet.getTimeStr());
 			startTweet = tweets.get(tweets.indexOf(startTweet) + 1);
 			endTweet = tweets.get(tweets.indexOf(endTweet) + 1);
 		}
